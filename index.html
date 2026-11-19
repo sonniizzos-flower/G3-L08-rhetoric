@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第八課 修辭總複習</title>
+<meta name="description" content="寄居蟹小寄帶領的海洋動畫教室：複習設問、頂真、類疊、鑲嵌、感嘆，可自動播放或互動答題。">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="viewport">
+<div id="stage">
+  <svg id="bg" viewBox="0 0 1920 1080" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <linearGradient id="sandg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F9E4B0"/><stop offset="1" stop-color="#EBC77C"/></linearGradient>
+    </defs>
+    <!-- 魚 -->
+    <g class="fish" style="animation-duration:80s;animation-delay:-20s"><g transform="translate(0,205)" opacity=".8"><ellipse cx="40" cy="0" rx="44" ry="26" fill="#FFB703"/><path d="M-4 0 L-40 -24 L-40 24Z" fill="#FB8500"/><circle cx="62" cy="-6" r="6" fill="#123B5E"/></g></g>
+    <g class="fish fishL" style="animation-duration:100s;animation-delay:-60s"><g transform="translate(0,610)" opacity=".7"><ellipse cx="40" cy="0" rx="40" ry="24" fill="#FF8FA3"/><path d="M80 0 L116 -22 L116 22Z" fill="#E5566D"/><circle cx="20" cy="-6" r="6" fill="#123B5E"/></g></g>
+    <!-- 氣泡 -->
+    <circle class="bub" cx="1790" cy="1100" r="22" style="animation-duration:26s;animation-delay:-4s"/>
+    <circle class="bub" cx="1700" cy="1100" r="14" style="animation-duration:20s;animation-delay:-12s"/>
+    <circle class="bub" cx="1850" cy="1100" r="30" style="animation-duration:32s;animation-delay:-20s"/>
+    <circle class="bub" cx="1250" cy="1100" r="16" style="animation-duration:28s;animation-delay:-8s"/>
+    <circle class="bub" cx="560" cy="1100" r="20" style="animation-duration:30s;animation-delay:-16s"/>
+    <circle class="bub" cx="90" cy="1100" r="26" style="animation-duration:24s;animation-delay:-2s"/>
+    <circle class="bub" cx="780" cy="1100" r="12" style="animation-duration:22s;animation-delay:-18s"/>
+    <!-- 沙地 -->
+    <path d="M0 1010 C240 975 470 1030 720 1000 C980 968 1220 1030 1480 998 C1660 978 1800 1000 1920 990 L1920 1080 L0 1080Z" fill="url(#sandg)"/>
+    <!-- 海草 -->
+    <g class="sway" style="animation-duration:7s"><path d="M1860 1010 C1820 930 1900 870 1850 790 C1830 750 1850 730 1850 710" fill="none" stroke="#2FA36B" stroke-width="22" stroke-linecap="round"/><path d="M1890 1010 C1930 940 1870 900 1900 840" fill="none" stroke="#3CC081" stroke-width="18" stroke-linecap="round"/></g>
+    <g class="sway" style="animation-duration:8s;animation-delay:-3s"><path d="M1560 1000 C1530 940 1590 900 1560 840" fill="none" stroke="#3CC081" stroke-width="16" stroke-linecap="round"/></g>
+    <g class="sway" style="animation-duration:6.5s;animation-delay:-2s"><path d="M30 1010 C0 930 70 880 30 800" fill="none" stroke="#2FA36B" stroke-width="20" stroke-linecap="round"/></g>
+    <!-- 海星與貝殼 -->
+    <g transform="translate(1700 1030) scale(.9)"><path d="M0 -42 L12 -14 L44 -12 L19 8 L27 40 L0 22 L-27 40 L-19 8 L-44 -12 L-12 -14Z" fill="#FF8FA3" stroke="#E5566D" stroke-width="5" stroke-linejoin="round"/></g>
+    <g transform="translate(1500 1040)"><path d="M-34 0 C-34 -40 34 -40 34 0Z" fill="#FFD9BF" stroke="#E8795A" stroke-width="5"/><path d="M-18 0 L-12 -30 M0 0 L0 -34 M18 0 L12 -30" stroke="#E8795A" stroke-width="4" fill="none"/></g>
+  </svg>
+
+  <div id="progress"><div id="pbar"></div></div>
+  <div id="chip"></div>
+  <div id="content"></div>
+
+  <div id="crab" aria-hidden="true">
+    <svg viewBox="0 0 400 360" width="400" height="360">
+      <g class="bob">
+        <g stroke="#E4572E" stroke-width="13" stroke-linecap="round" fill="none">
+          <path d="M95 292 L66 336"/><path d="M135 304 L122 348"/><path d="M180 306 L188 348"/>
+        </g>
+        <path d="M205 130 C200 50 300 15 352 78 C400 138 372 262 288 296 C232 318 188 280 192 232 C195 196 208 166 205 130Z" fill="#FFD9BF" stroke="#E8795A" stroke-width="9" stroke-linejoin="round"/>
+        <path d="M300 118 C345 120 358 188 316 214 C278 236 238 204 254 172 C265 150 298 158 294 182" fill="none" stroke="#E8795A" stroke-width="10" stroke-linecap="round"/>
+        <path d="M238 100 C254 76 290 64 318 76" stroke="#fff" stroke-width="8" stroke-linecap="round" fill="none" opacity=".75"/>
+        <path d="M60 262 C60 205 120 190 175 200 C225 208 240 250 225 285 C205 318 100 325 70 292 C62 282 60 272 60 262Z" fill="#FF8F5A" stroke="#E4572E" stroke-width="8" stroke-linejoin="round"/>
+        <g stroke="#E4572E" stroke-width="10" stroke-linecap="round"><path d="M105 205 L96 156"/><path d="M162 202 L170 150"/></g>
+        <circle cx="94" cy="140" r="27" fill="#fff" stroke="#E4572E" stroke-width="7"/><circle cx="99" cy="142" r="12" fill="#123B5E"/><circle cx="103" cy="137" r="4.5" fill="#fff"/>
+        <circle cx="172" cy="134" r="27" fill="#fff" stroke="#E4572E" stroke-width="7"/><circle cx="177" cy="136" r="12" fill="#123B5E"/><circle cx="181" cy="131" r="4.5" fill="#fff"/>
+        <circle cx="96" cy="262" r="13" fill="#FF6F91" opacity=".55"/><circle cx="188" cy="262" r="13" fill="#FF6F91" opacity=".55"/>
+        <g class="mouth"><path d="M124 246 Q142 280 160 246 Z" fill="#8A1C2B" stroke="#8A1C2B" stroke-width="6" stroke-linejoin="round"/></g>
+        <g class="clawL">
+          <path d="M72 262 C44 252 30 228 30 200" fill="none" stroke="#E4572E" stroke-width="14" stroke-linecap="round"/>
+          <path d="M30 196 C-2 176 6 126 38 128 C52 130 54 146 48 158 C62 152 74 164 66 182 C60 196 44 202 30 196Z" fill="#FF6B3D" stroke="#E4572E" stroke-width="7" stroke-linejoin="round"/>
+        </g>
+        <path d="M214 276 C240 280 258 270 264 252" fill="none" stroke="#E4572E" stroke-width="12" stroke-linecap="round"/>
+        <ellipse cx="270" cy="244" rx="20" ry="15" fill="#FF6B3D" stroke="#E4572E" stroke-width="6"/>
+      </g>
+    </svg>
+  </div>
+  <div id="bubble"><span id="btext"></span></div>
+
+  <div id="bookpanel"><h3 id="bookh"></h3><p id="bookp"></p><button onclick="closeBook()">關起來</button></div>
+</div>
+</div>
+
+<div id="controls">
+  <div class="row"><input id="seek" type="range" min="0" max="0" value="0" aria-label="播放進度"><span id="pos">1 / 1</span></div>
+  <div class="row">
+    <button id="bFirst" title="從頭重新播放">⏮ 從頭重播</button>
+    <button id="bPrev" title="上一頁（←）">◀ 上一頁</button>
+    <button id="bPlay" title="播放／暫停（空白鍵）">▶ 播放</button>
+    <button id="bNext" title="下一頁（→）">下一頁 ▶</button>
+    <button id="bReplay" title="重播本頁（R）">↻ 重播本頁</button>
+    <span class="seg"><button id="mAuto">自動播放</button><button id="mInter">互動教學</button></span>
+    <select id="jump" aria-label="跳到單元"></select>
+    <button id="bVoice" title="語音開關（M）">🔊 語音：開</button>
+    <select id="voiceSel" aria-label="語音選擇"></select>
+    <label>語速 <input id="rate" type="range" min="0.5" max="1.2" step="0.05" value="0.8"></label>
+    <span id="vnote"></span>
+    <button id="bFull" title="全螢幕（F）">⛶ 全螢幕</button>
+    <button id="bRec" title="錄影模式">🎬 錄影模式</button>
+    <button id="bHelp">？說明</button>
+  </div>
+</div>
+<div id="toast"></div>
+<div id="recHint"></div>
+<div id="help"><div class="box">
+  <h2>操作說明</h2>
+  <p><kbd>空白鍵</kbd> 播放／暫停　<kbd>←</kbd><kbd>→</kbd> 上一頁／下一頁　<kbd>R</kbd> 重播本頁　<kbd>F</kbd> 全螢幕　<kbd>M</kbd> 語音開關　<kbd>1</kbd><kbd>2</kbd><kbd>3</kbd> 選答案　<kbd>Esc</kbd> 離開全螢幕或錄影模式</p>
+  <h3>兩種模式</h3>
+  <p><b>自動播放</b>：自動依序播放，題目頁會留 10 秒思考時間，之後自動公布答案（適合示範、錄影）。<br><b>互動教學</b>：每頁播完就停住，學生點選答案後才會顯示答案與原因（回答前不會顯示答案）。</p>
+  <h3>錄製成 MP4（Windows）</h3>
+  <p>1. 按「🎬 錄影模式」（自動進入全螢幕、隱藏控制列）。<br>2. 按 <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>R</kbd> 開始錄影（Xbox Game Bar，MP4 會存在「影片＼擷取」）。<br>3. 按 <kbd>空白鍵</kbd> 開始自動播放。結束後再按 <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>R</kbd>。<br>若 Game Bar 無法錄到瀏覽器，可改用 OBS Studio。語音要錄進影片，需開啟系統音訊錄製。</p>
+  <h3>語音</h3>
+  <p>優先使用瀏覽器中的繁體中文（台灣）語音；建議用 Microsoft Edge，通常有「Microsoft HsiaoChen Online (Natural)」等自然語音。找不到中文語音時，仍可使用字幕對話框。</p>
+  <h3>教材範圍</h3>
+  <p>依第八課教材順序：設問、頂真、類疊、鑲嵌、感嘆。課文例句與修辭名稱皆取自教材原文；「小寄說明」與答案原因為簡化說明，教材原文可按「📖 教材原文」查看。</p>
+  <button onclick="document.getElementById('help').classList.remove('open')">我知道了</button>
+</div></div>
+<noscript><p style="color:#fff;padding:2em;font-size:24px">此教材需要開啟 JavaScript 才能使用。</p></noscript>
+<script src="js/app.js"></script>
+</body>
+</html>
